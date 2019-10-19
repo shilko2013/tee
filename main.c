@@ -42,7 +42,7 @@ int main(int argc, char *argv[]) {
                 return 1;
         }
     }
-    const int FILE_CNT = argc - optind + 2;
+    const int FILE_CNT = argc - optind + 1;
     files = malloc(FILE_CNT * sizeof(int));
     files[0] = 1;
     for (int i = optind, current_i = i; current_i < argc; ++i, ++current_i) {
